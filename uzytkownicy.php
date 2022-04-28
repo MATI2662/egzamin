@@ -72,3 +72,7 @@
         <footer id = "footer">Stronę wykonał: PESEL</footer>
     </body>
 </html>
+
+<?php
+    mysqli_close($con);
+?>
