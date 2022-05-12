@@ -54,7 +54,7 @@
                                 $result = mysqli_query($con, $sql);
                                 $row = mysqli_fetch_array($result);
                                 echo '<img src = "./' . $row[4] . '" alt = "osoba">';
-                                echo "<h4>Login: " . $row[0] . "(" . date("Y") - $row[1] . ")</h4>";
+                                echo "<h4>" . $row[0] . "(" . date("Y") - $row[1] . ")</h4>";
                                 echo "<p>Hobby:" . $row[3] . "</p>";
                                 echo "<h1><img src = './icon-on.png'>" . $row[2] . "</h1>";
                                 echo "<a href = 'dane.html'><button id = 'wizytowka_btn'>Więcej informacji</button></a>";
@@ -72,3 +72,7 @@
         <footer id = "footer">Stronę wykonał: PESEL</footer>
     </body>
 </html>
+
+<?php
+    mysqli_close($con);
+?>
